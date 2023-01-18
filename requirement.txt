@@ -1,0 +1,6 @@
+tensorflow==1.15.0
+tensoflow-hub==0.7.0
+pandas==1.3.5
+matplotlib==3.5.3
+plotly==
+protobuf==3.20
