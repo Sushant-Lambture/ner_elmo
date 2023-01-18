@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use("ggplot")
 
-data = pd.read_csv(r'/home/sushant/env/files/train_final.csv') #, encoding="latin1")
+data = pd.read_csv('train_final.csv') #, encoding="latin1")
 # data=data.drop(['Unnamed: 0.1'],axis=1)
 # data = data.drop(['POS'], axis =1)
 # data = data.fillna(method="ffill")
@@ -173,7 +173,7 @@ for w, true, pred in zip(X_te[i], y_te[i], p):
     if w != "__PAD__":
         print("{:10}:{:10} ({})".format(w, label[pred], label[true]))
 
-d = pd.read_csv(r"/home/sushant/env/files/test_set_ran.csv") #, encoding="latin1")
+d = pd.read_csv(r"test_set_ran.csv") #, encoding="latin1")
 # data=data.drop(['Unnamed: 0.1'],axis=1)
 # data = data.drop(['POS'], axis =1)
 # data = data.fillna(method="ffill")
