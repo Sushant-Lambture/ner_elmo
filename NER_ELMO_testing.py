@@ -170,8 +170,9 @@ print("="*60)
 
 for w, true, pred in zip(X_te[i], y_te[i], p):
     if w != "__PAD__":
-        print("{:10}:{:10} ({})".format(w, label[pred], label[true]))
-
+        print("{:10}:{:10} ({})".format(w, label[pred], label[true]))       
+        
+## TESTING ON TEST DATA SET
 d = pd.read_csv(r"test_set_ran.csv") #, encoding="latin1")
 # data=data.drop(['Unnamed: 0.1'],axis=1)
 # data = data.drop(['POS'], axis =1)
