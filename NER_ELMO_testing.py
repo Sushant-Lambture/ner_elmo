@@ -1,5 +1,3 @@
-# !python --version
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -122,7 +120,8 @@ X_tr, X_val = X_tr[:10000*batch_size], X_tr[-2500*batch_size:]
 y_tr, y_val = y_tr[:10000*batch_size], y_tr[-2500*batch_size:]
 y_tr = y_tr.reshape(y_tr.shape[0], y_tr.shape[1], 1)
 y_val = y_val.reshape(y_val.shape[0], y_val.shape[1], 1)
-history = model.fit(np.array(X_tr), y_tr,validation_data=(np.array(X_val), y_val),batch_size=batch_size, epochs=3, verbose=1)
+# history = model.fit(np.array(X_tr), y_tr,validation_data=(np.array(X_val), y_val),batch_size=batch_size, epochs=1, verbose=1)
+history = model.fit(np.array(X_tr), y_tr,batch_size=batch_size, epochs=3, verbose=1)
 
 # X_tr, X_val = X_tr[:10000*batch_size], X_tr[-2500*batch_size:]
 # y_tr, y_val = y_tr[:10000*batch_size], y_tr[-2500*batch_size:]
